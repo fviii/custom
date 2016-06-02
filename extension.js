@@ -46,37 +46,37 @@
     //Change the bots default settings and make sure they are loaded on launch
 
     localStorage.setItem("basicBotsettings", JSON.stringify({
-      botName: "basicBot",
+      botName: "SeshBot",
       language: "english",
-      chatLink: "https://rawgit.com/basicBot/source/master/lang/en.json",
-      scriptLink: "https://rawgit.com/basicBot/source/master/basicBot.js",
+      chatLink: "https://rawgit.com/fviii/source/master/lang/en.json",
+      scriptLink: "https://rawgit.com/fviii/source/master/basicBot.js",
       roomLock: false, // Requires an extension to re-load the script
       startupCap: 1, // 1-200
       startupVolume: 0, // 0-100
       startupEmoji: false, // true or false
-      autowoot: true,
+      autowoot: false,
       autoskip: false,
       smartSkip: true,
       cmdDeletion: true,
-      maximumAfk: 120,
+      maximumAfk: 180,
       afkRemoval: true,
-      maximumDc: 60,
-      bouncerPlus: true,
+      maximumDc: 15,
+      bouncerPlus: false,
       blacklistEnabled: true,
       lockdownEnabled: false,
       lockGuard: false,
       maximumLocktime: 10,
-      cycleGuard: true,
+      cycleGuard: false,
       maximumCycletime: 10,
       voteSkip: false,
       voteSkipLimit: 10,
       historySkip: false,
       timeGuard: true,
-      maximumSongLength: 10,
+      maximumSongLength: 15,
       autodisable: true,
       commandCooldown: 30,
       usercommandsEnabled: true,
-      skipPosition: 3,
+      skipPosition: 2,
       skipReasons: [
       ["theme", "This song does not fit the room theme. "],
       ["op", "This song is on the OP list. "],
@@ -88,9 +88,9 @@
       ],
       afkpositionCheck: 15,
       afkRankCheck: "ambassador",
-      motdEnabled: false,
-      motdInterval: 5,
-      motd: "Temporary Message of the Day",
+      motdEnabled: true,
+      motdInterval: 10,
+      motd: " :herb: :fire:",
       filterChat: true,
       etaRestriction: false,
       welcome: true,
@@ -105,13 +105,13 @@
       songstats: true,
       commandLiteral: "!",
       blacklists: {
-        NSFW: "https://rawgit.com/basicBot/custom/master/blacklists/NSFWlist.json",
-        OP: "https://rawgit.com/basicBot/custom/master/blacklists/OPlist.json",
-        BANNED: "https://rawgit.com/basicBot/custom/master/blacklists/BANNEDlist.json"
+        NSFW: "https://rawgit.com/fviii/custom/master/blacklists/NSFWlist.json",
+        OP: "https://rawgit.com/fviii/custom/master/blacklists/OPlist.json",
+        BANNED: "https://rawgit.com/fviii/custom/master/blacklists/BANNEDlist.json"
       }
     }));
 
     // Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/basicBot/source/master/basicBot.js", extend);
+    $.getScript("https://rawgit.com/fviii/source/master/basicBot.js", extend);
 
 }).call(this);
