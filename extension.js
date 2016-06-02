@@ -86,7 +86,7 @@
       ["nsfw", "The song you contained was NSFW (image or sound). "],
       ["unavailable", "The song you played was not available for some users. "]
       ],
-      afkpositionCheck: 15,
+      afkpositionCheck: 5,
       afkRankCheck: "ambassador",
       motdEnabled: true,
       motdInterval: 10,
@@ -95,7 +95,7 @@
       etaRestriction: false,
       welcome: true,
       opLink: null,
-      rulesLink: null,
+      rulesLink: "https://i.gyazo.com/120467052aeec74f1e1aa4ac21141f8b.png",
       themeLink: null,
       fbLink: null,
       youtubeLink: null,
